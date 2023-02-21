@@ -1,1 +1,15 @@
-<p>formulario works!</p>
+<form>
+    <div class="form-group">
+      <label for="opa">Operando A:</label>
+      <input type="number" id="opa" name="operandoA" [(ngModel)]="operandoA" class="form-control mb-3"
+        placeholder="Escribe el operando A">
+    </div>
+
+    <div class="form-group">
+      <label for="opb">Operando B:</label>
+      <input type="number" id="opb" name="operandoB" [(ngModel)]="operandoB" class="form-control mb-3 "
+        placeholder="Escribe el operando B">
+    </div>
+
+    <button class="btn btn-primary mb-2" type="submit" (click)="enviarElementos()">Sumar operandos</button>
+  </form>
