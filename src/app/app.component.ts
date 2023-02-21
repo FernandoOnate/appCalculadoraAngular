@@ -10,7 +10,10 @@ export class AppComponent {
 
   resultado: number;
 
-  sumar(operandos: number[]) {
-    this.resultado = operandos[0] + operandos[1];
+  // sumar(operandos: number[]) {
+  //   this.resultado = operandos[0] + operandos[1];
+  // }
+  procesarResultado(sumatoria:number){
+    this.resultado = sumatoria;
   }
 }

@@ -9,9 +9,9 @@ export class FormularioComponent {
    operandoA:number;
    operandoB:number;
 
-  @Output() operandos = new EventEmitter<number[]>();
+  @Output() operandos = new EventEmitter<number>();
 
   enviarElementos():void{
-    this.operandos.emit([this.operandoA,this.operandoB]);
+    this.operandos.emit(this.operandoA +this.operandoB);
   }
 }

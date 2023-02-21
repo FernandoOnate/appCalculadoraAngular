@@ -1,7 +1,7 @@
 <div class="container">
   <h1>{{tituloApp}}</h1>
   <app-formulario 
-  (operandos)="sumar($event)"
+  (operandos)="procesarResultado($event)"
   ></app-formulario>
   <app-resultado [res]="resultado"></app-resultado>
 </div>
